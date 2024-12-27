@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaimy The Astronaut</title>
+    <style>
+        :root {
+            --bg-color-light: #f5f7fa;
+            --text-color-light: #2c3e50;
+            --card-bg-light: white;
+            --primary-color-light: #2575fc;
+            --secondary-color-light: #6a11cb;
+
+            --bg-color-dark: #1a1a2e;
+            --text-color-dark: #eaeaea;
+            --card-bg-dark: #16213e;
+            --primary-color-dark: #1f4068;
+            --secondary-color-dark: #e94560;
+
+            --bg-color: var(--bg-color-light);
+            --text-color: var(--text-color-light);
+            --card-bg: var(--card-bg-light);
+            --primary-color: var(--primary-color-light);
+            --secondary-color: var(--secondary-color-light);
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+            transition: all 0.3s ease;
+            background-image: url('https://www.transparenttextures.com/patterns/space.png');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .header p {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: var(--secondary-color);
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            border-left: 5px solid var(--secondary-color);
+            padding-left: 10px;
+            text-transform: uppercase;
+        }
+
+        .links ul {
+            list-style: none;
+        }
+
+        .links li {
+            margin-bottom: 10px;
+        }
+
+        .links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background: var(--card-bg);
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .footer p {
+            color: var(--text-color);
+            font-size: 0.9rem;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            background: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">Switch Theme</button>
+    <div class="container">
+        <div class="header">
+            <h1>Jaimy The Astronaut</h1>
+            <p>Agender | Aroace | Femboy | Polyamorous</p>
+            <p>they/them</p>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2>Connect with Me</h2>
+                <ul class="links">
+                    <li><a href="https://instagram.com/iamanastronaut._" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com/iamanastronautt" target="_blank">Twitter</a></li>
+                    <li><a href="https://jaimytheenby.tumblr.com" target="_blank">Tumblr</a></li>
+                    <li><a href="https://youtube.com/iamanastronautt" target="_blank">YouTube</a></li>
+                    <li><a href="https://pinterest.com/iamanastronaut_" target="_blank">Pinterest</a></li>
+                    <li><a href="https://threads.net/iamanastronaut_" target="_blank">Threads</a></li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Best Friends</h2>
+                <ul>
+                    <li>Juno</li>
+                    <li>San</li>
+                    <li>Sam</li>
+                    <li>Charlie</li>
+                    <li>Rasmus</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Favorite Music 🎵</h2>
+                <ul>
+                    <li>Cavetown</li>
+                    <li>Mother Mother</li>
+                    <li>Panic! At The Disco</li>
+                    <li>Green Day</li>
+                    <li>Queen</li>
+                    <li>Toby Fox</li>
+                    <li>Doe Maar</li>
+                    <li>Mitski</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Interests</h2>
+                <ul>
+                    <li>Monster Energy ⚡</li>
+                    <li>Not Sleeping 😅</li>
+                    <li>Anime 🎌</li>
+                    <li>Being Weird 🤪</li>
+                    <li>Cooking 🍳</li>
+                    <li>Baking 🧁</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Made with ❤️ by Jaimy</p>
+        </div>
+    </div>
+    <script>
+        function toggleTheme() {
+            const root = document.documentElement;
+            const themeButton = document.querySelector('.theme-toggle');
+
+            if (root.style.getPropertyValue('--bg-color') === 'var(--bg-color-light)') {
+                // Switch to Dark Mode
+                root.style.setProperty('--bg-color', 'var(--bg-color-dark)');
+                root.style.setProperty('--text-color', 'var(--text-color-dark)');
+                root.style.setProperty('--card-bg', 'var(--card-bg-dark)');
+                root.style.setProperty('--primary-color', 'var(--primary-color-dark)');
+                root.style.setProperty('--secondary-color', 'var(--secondary-color-dark)');
+                themeButton.textContent = 'Switch Theme: Light Mode';
+            } else {
+                // Switch to Light Mode
+                root.style.setProperty('--bg-color', 'var(--bg-color-light)');
+                root.style.setProperty('--text-color', 'var(--text-color-light)');
+                root.style.setProperty('--card-bg', 'var(--card-bg-light)');
+                root.style.setProperty('--primary-color', 'var(--primary-color-light)');
+                root.style.setProperty('--secondary-color', 'var(--secondary-color-light)');
+                themeButton.textContent = 'Switch Theme: Dark Mode';
+            }
+        }
+    </script>
+</body>
+</html>
+rf
